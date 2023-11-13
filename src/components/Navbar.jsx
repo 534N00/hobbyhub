@@ -8,8 +8,9 @@ const Navbar = () => {
                 <ul>
                     <li className="title-item"><h2>Plant Royale</h2></li>
                     <li><Link to="/" className="Link">Home</Link></li>
-                    <li><Link to="/Post" className="Link">Post a Plant</Link></li>
-                    <li><Link to="/About" className="Link">About</Link></li>
+                    <li><Link to="/all" className="Link">All Plants</Link></li>
+                    <li><Link to="/post" className="Link">Post a Plant</Link></li>
+                    <li><Link to="/about" className="Link">About</Link></li>
                 </ul>  
             </nav>
         </div>

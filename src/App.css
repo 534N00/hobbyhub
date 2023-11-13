@@ -5,6 +5,13 @@
   /* text-align: center; */
 }
 
+/* For Main's content spacing */
+.Spacing {
+  margin-top: 7rem;
+}
+
+/* For Navbar */
+
 .Navbar {
   position: absolute; 
   /* maybe make sticky later */
@@ -51,11 +58,61 @@
   font-weight: bold;
 }
 
-.Spacing {
-  margin-top: 7rem;
+/* For post */
+
+.submit {
+  box-shadow: rgb(0, 0, 0) 0 0 1.5em;
+  transition: box-shadow 0.7s ease;
 }
 
+.plain {
+  box-shadow: rgba(255, 255, 255, 0) 0 0 1.5em;
+  transition: box-shadow 0.7s ease;
+}
 
+/* For Card in All Plants */
+
+.all-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.Card {
+  color: black;
+  text-align: center;
+  /* align-items: center; */
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+}
+
+.Card img {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+.Card button {
+  margin: 0.2rem 0.2rem;
+  height:50px;
+  width: 80px;
+  /* idk why buttons seem to be ofset */
+}
+
+.liked {
+  border-color: #003D3A;
+  background-color: #A40E4C;
+}
+.unliked {
+  border-color: #003D3A;
+  background-color: rgb(204, 204, 204);
+}
+.more {
+  border-color: #003D3A;
+  background-color: #b18564;
+}
 
 
 .Footer {
