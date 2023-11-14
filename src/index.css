@@ -39,8 +39,9 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid #A40E4C;
   padding: 0.6em 1.2em;
+  margin: 0.7em 0.3em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -49,7 +50,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #558B76;
 }
 button:focus,
 button:focus-visible {

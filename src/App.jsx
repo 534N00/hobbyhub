@@ -28,7 +28,7 @@ function App() {
               <Route path="/all" element={ <All supabase={supabase}/> } />
               <Route path="/post" element={ <Post supabase={supabase}/> } />
               <Route path="/plant/:id" element={ <Plant supabase={supabase}/> } />
-              <Route path="/plant/edit/:id" element={ <PlantEdit supabase={supabase}/> } />
+              <Route path="/edit/:id" element={ <PlantEdit supabase={supabase}/> } />
               <Route path="/about" element={ <About /> } />
               <Route path="*" element={ <Oops /> } />
             </Route>

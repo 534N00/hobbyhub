@@ -1,14 +1,15 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ id, name, species, image_link, likes, supabase }) => {
+const Card = ({ id, name, species, date, image_link, likes, supabase }) => {
 
     const [isLiked, setIsLiked] = useState(false); // for updating likes
     const liked = likes+1;
     const unliked = likes;
     const [likeState, setLikeState] = useState(unliked); // state for visual
     const [cssState, setCssState] = useState("unliked"); // default css class FOR BUTTON
+    
 
     // for updating likes
     const handleLike = (isLiked) => {
@@ -43,12 +44,11 @@ const Card = ({ id, name, species, image_link, likes, supabase }) => {
         }
     };
     
-
-
     return (
         <div className="Card">
             <h4>{name}</h4>
             <p><em>{species}</em></p>
+            <p>{date}</p>
             <img src={image_link} alt={name} />
             <br/>
             <button className={cssState} onClick={() => handleLike(isLiked)}>{likeState} 👍</button>
